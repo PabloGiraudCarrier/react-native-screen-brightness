@@ -24,8 +24,7 @@ public class ScreenBrightnessPackage implements ReactPackage {
   public List<NativeModule> createNativeModules(ReactApplicationContext reactApplicationContext) {
     List<NativeModule> modules = new ArrayList<NativeModule>();
     modules.add(new ScreenBrightnessModule(
-            reactApplicationContext,
-            mWriteSettingsRequestCode
+            reactApplicationContext
     ));
     return modules;
   }
