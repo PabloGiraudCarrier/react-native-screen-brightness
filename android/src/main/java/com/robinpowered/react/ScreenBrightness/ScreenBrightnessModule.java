@@ -67,8 +67,8 @@ public class ScreenBrightnessModule extends ReactContextBaseJavaModule
         }
     }
 
-    public void onNewIntent(Intent intent) {
-
+    @Override protected void onNewIntent(Intent intent) { 
+        super.onNewIntent(intent);
     }
 
     /**
